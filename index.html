@@ -544,6 +544,11 @@
                   </ul>
                   <p>In the basolateral amygdala, norepinephrine beta receptors inhibits the slow after-hyperpolarization that occurs after trains of action potentials, thereby facilitating spike firing. They also suppress feed-forward GABAergic inhibition of basolateral projection neurons. </p>
                   <p>In the prelimbic cortex, D1 receptors affect cellular excitability by shifting the activation threshold of the persistent sodium current toward a more hyperpolarized potential and slow inactivation, affecting slow excitatory postsynaptic potential amplitudes. Similar to in the basolateral amygdala, dopamine 1 receptors decrease the spike threshold, which decreases the slowly inactivating potassium current. D1 receptor activation reduces the half-width and amplitude of isolated dendritic calcium ion spikes. D1 receptor stimulation has also been shown to increase the NMDA component of excitatory postsynaptic potential cells in the prefrontal cortex, of which the prelimbic cortex is a part. At low dopamine, D2 receptor activation enhances GABA_A-like synaptic currents in the prefrontal cortex and decreases non-NMDA currents. Excitation of norepinephrine alpha 2 A receptors reduces the concentration of cAMP, which in turn decreases hyperpolarization activated cyclic nucleotide-gated channel conductance, causing hyperpolarization of the resting membrane potential, a significant increase in the input resistance of the cell membrane, and an increase in the number of evoked spikes. Stimulation of norepinephrine beta receptors increases the NMDA mediated calcium current and the occurrence of spontaneous excitatory postsynaptic currents. It is important to note that inhibition of norepinephrine beta receptors has been reported to reduce both freezing and spontaneous activity in prelimbic cortex. </p>
+                  <p><i>An in depth diagram of dopamine interacting with this pathway, developed from [1], is depicted in Figure 22.</i></p>
+                  <!--Insert Network Architecture Picture here-->
+                  <p>The effect of dopamine on inhibitory activity in the pavlovian pathway, combined with the conclusions that neuromodulator release in the pathway results from freezing and theta-gamma coupled oscillations also result from freezing, provokes the question of dopamine’s role in the formation of gamma oscillations. Because the mechanism underlying gamma oscillations is inconclusive, Here, we will consider both known mechanisms in the context of dopamine. </p>
+                  <p>To read about dopaminergic modulation of gamma oscillations read <a href="#portfolioModal6">Network Synchrony</a>.</p>
+
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
                     Close Project</button>
@@ -571,18 +576,125 @@
                   <!-- Project Details Go Here -->
                   <h2 class="text-uppercase">Network Synchrony</h2>
                   <p class="item-intro text-muted">Ɣ Oscillations</p>
-                  <img class="img-fluid d-block mx-auto" src="images/network synchrony.gif" alt="">
+                  <img class="img-fluid d-block mx-auto" src="images/network synchrony.gif" alt="" width="75%">
                   <h4>What</h4>
-                  <p>Oscillations are simplest form of coherent network behavior in the brain. Previous literature indicate that the oscillatory state of a network: cause the system to experience input bias causing non-random input allowance, can temporarily link neurons into assemblies, facilitate synaptic plasticity, support temporal representation, and enhance long term information consolidation. Previous literature suggests that changes in the frequency of oscillation couplings between gamma oscillations and specific theta cycle portions are capable of correlating with and/or mediating a shift between the states of fear and safety. Specifically: theta-gamma coupling overlap was increased during states of fear while the coupling was suppressed during perceived safety. These theta-gamma couplings are referred to as a complex’s synchrony [7]. </p>
-                  <p>The synchronous activity of the local field potentials of the BLA, PFC, and HPC complex facilitate communication between each pathway. Similar to the  effects of registered gamma-theta oscillation coupling changes; shifts in the theta synchrony of this complex correlates with bulk perception and distinction of fear and safety. Through experimentation with oscillatory relations the BLA,PFC, & HPC complex was shown to express 2 consistent qualities. The synchronous activity of the BLA-PFC complex is engaged during fear discrimination. There is a distinct directionality for complex synchrony associated with suppression of fear.</p>
+                  <p>Oscillations are the simplest form of coherent network behavior in the brain. Previous literature indicates that the oscillatory state of a network causes the system to experience input bias via non-random input allowance, temporarily linking neurons into assemblies, facilitating synaptic plasticity, supporting temporal representation, and enhancing long term information consolidation. Previous literature suggests that changes in the frequency of oscillation couplings between gamma oscillations and specific theta cycle portions are capable of correlating with and/or mediating a shift between the states of fear and safety. Specifically: theta-gamma coupling overlap was increased during states of fear while the coupling was suppressed during perceived safety. These theta-gamma couplings are referred to as a complex’s synchrony [7]. </p>
+                  <p>The synchronous activity of the local field potentials of the BLA, PFC, and HPC complex facilitate communication between each pathway. Similar to the  effects of registered gamma-theta oscillation coupling changes, shifts in the theta synchrony of this complex correlates with bulk perception of and distinction between fear and safety. Through experimentation with oscillatory rhythms, the BLA, PFC, & HPC complex was shown to express 2 consistent qualities: </p>
+                  <ol class = "list-inline">
+                  	<li>The synchronous activity of the BLA-PFC complex is engaged during fear discrimination.</li>
+                  	<p>and</p>
+                  	<li>There is a distinct directionality for complex synchrony associated with suppression of fear.</li>
+                  </ol>
+                    </p>
+                  <h4>Dopaminergic Modulation of Ɣ Oscillations</h4>
+                  <!-- Insert dopamine neuromodulator picture here -->
+                  <figure>
+                  	<img src="images/dopamineneuromod.png">
+                  	<!-- <figcaption>
+                  		Figure. Pre- and Post-synaptic modulation with dopamine
+                  	</figcaption> -->
+                  </figure>
+                  <p>The lateral amygdala displays transient signal responses to conditioned stimuli, whilst the basal amygdala and the prelimbic cortex both display sustained responses to conditioned stimuli [1]. The literature tells us that this sustained feedback from the prelimbic cortex is linked to the freezing behavior evoked in primates in reaction to a threatening stimulus [1]. Previous studies also combined extracellular recordings and optogenetics to study oscillatory correlations with behavioral responses and concluded that the onset of a freezing behavioral expression of fear correlated with theta-gamma coupled oscillations in the pathway [15].</p>
+                  <p>Based on previous research, it is known that neuromodulators alter the excitability of prelimbic and basal amygdala cells, during fear conditioning and extinction. The most impactful neuromodulators on the pavlovian fear conditioning pathway in the amygdala are dopamine and norepinephrine [1]. Here, we focuse on the implication of dopamine release on gamma oscillations in the pavlovian pathway.</p>
+                  <p>The following was demonstrated by the in silico model designed in [1]. In the prelimbic cortex, D1 receptors affect cellular excitability by shifting the activation threshold of the persistent sodium current toward a more hyperpolarized potential and slow inactivation, affecting slow excitatory postsynaptic potential amplitudes. Similar to in the basolateral amygdala, dopamine 1 receptors decrease the spike threshold, which decreases the slowly inactivating potassium current. D1 receptor activation reduces the half-width and amplitude of isolated dendritic calcium ion spikes. D1 receptor stimulation has also been shown to increase the NMDA component of excitatory postsynaptic potential cells in the prefrontal cortex, of which the prelimbic cortex is a part. D2 receptor activation enhances GABA_A-like synaptic currents in the prefrontal cortex and decreases non-NMDA currents [1].  <i>An in depth diagram of dopamine interacting with this pathway, developed from [1], is depicted in the <a href="#portfolioModal3">Network Architecture</a> modal</i></p>
+                  
+                  <p>The effect of dopamine on inhibitory activity in the pavlovian pathway, combined with the conclusions that neuromodulator release in the pathway results from freezing and theta-gamma coupled oscillations also result from freezing, provokes the question of dopamine’s role in the formation of gamma oscillations. Because the mechanism underlying gamma oscillations is inconclusive, Here, we will consider both known mechanisms in the context of dopamine. </p>
                   <h4>PING vs. ING</h4>
-                  <img class="img-fluid d-block mx-auto" src="images/ingping.png" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Window</li>
-                    <li>Category: Photography</li>
-                  </ul>
+                  <figure><img class="img-fluid d-block mx-auto" src="images/ingping.png" alt="" width="45%"><figcaption font-size="smaller">Figure 23</figcaption></figure>
+                  
+                  <p>The two primary theories are: <i>pyramidal-interneuronal network gamma</i> (PING) rhythms and <i>interneuronal network gamma</i> (ING) rhythms [9]. Both of which correspond to network motifs that are common throughout the cortex [2].</p>
+                  <p>PING describes a network of excitatory and inhibitory neurons, referred to as E-cells and I-cells, respectively, in which activity of E-cells stimulates I-cells that in turn inhibit the firing of E-cells, such that upon resumption of firing, the E-cells are brought closer to synchrony (Figure 23) [12]. This network stands in contrast to that of ING.</p>
+                  <p>Driven entirely by I-cells, ING works through the inhibition resulting from some I-cells firing, which delays other I-cells’ spiking to have them participate in the next inhibitory volley. This results in I-cells synchronizing E-cells [2].</p>
+
+                  <h5>Based on current available literature and numerical analysis of simulated network models, we conclude that whilst ING can’t be ruled out, PING seems the more likely mechanism underlying gamma rhythms in the pavlovian pathway. This is in agreement with the conclusions of [2].</h5>
+                  <p><i>For the entire numerical analysis please </i><a href="https://docs.google.com/document/d/1udiah6AhWuNNt4T1LaqwtAaKg3dbjEKLUIfY2xZLSJ4/edit?usp=sharing">click here</a>.</p>
+                  <h4>Overview of Conclusions</h4>
+                  <p><i>PING</i></p>
+                  <!--Figure 1 -->
+                  <figure>
+                  	<img src="images/gamma-analysis/figure1.png" width="45%">
+                  	<figcaption>Figure 1</figcaption>
+                  </figure>
+                  
+                  <p><b>1.</b> If the oscillations observed in the basolateral amygdala are PING, then for dopamine modulation to generate a stable PING that wouldn’t have occurred otherwise, this paper assumes that the initial inhibitory drive is not strong enough to stimulate enough I-cells to fire. More negative inhibitory drive reduced the number of I-cells spiking and diminished PING, in accordance with expectations (Figures 2, 3, and 4). This makes sense, as reduction in the amount of stimulated cells directly induces a reduction in the synaptic input per cell, thus PING breaks down  [4]. </p>
+                  <!-- Figure 2, 3, and 4 -->
+                  <figure>
+                  	<img src="images/gamma-analysis/figure2.png" width="45%">
+                  	<figcaption>Figure 2</figcaption>
+                  	<img class="img-fluid d-block mx-auto" src="images/gamma-analysis/figure3.png" width="45%">
+                  	<figcaption>Figure 3</figcaption>
+                  	<img class="img-fluid d-block mx-auto" src="images/gamma-analysis/figure4.png" width="45%">
+                  	<figcaption>Figure 4</figcaption>
+                  </figure>
+                  
+                  <p> With a fundamental assumption confirmed, the reappearance of PING through the injection of positive drive was evaluated. Simulations found that whilst PING appeared when given low values of positive drive, too high of positive drive had diminishing returns (Figure 6 and 7). Moreover, the time to establish a clear and stable PING extended (Figures 1, 6 and 7). Note that this disappearance happens at a much slower rate than the loss of PING via negative drive, as can be seen when comparing Figures 2 and 6, as well as Figures 3 and 7. The primary difference to examine, here, is the ratio of I-cells to E-cells firing. Whilst negative drive to I-cells lowers this ratio, positive drive raises it. </p>
+                  <!-- Figure 5, Figure 6, Figure 7, Figure 8, Figure 9 -->
+                  <figure>
+                  	<img src="images/gamma-analysis/figure5.png" width="45%">
+                  	<figcaption>Figure 5</figcaption>
+                  	<img class="img-fluid d-block mx-auto" src="images/gamma-analysis/figure6.png" width="45%">
+                  	<figcaption>Figure 6</figcaption>
+                  	<img class="img-fluid d-block mx-auto" src="images/gamma-analysis/figure7.png" width="45%">
+                  	<figcaption>Figure 7</figcaption>
+                  	<img class="img-fluid d-block mx-auto" src="images/gamma-analysis/figure8.png" width="45%">
+                  	<figcaption>Figure 8</figcaption>
+                  	<img class="img-fluid d-block mx-auto" src="images/gamma-analysis/figure9.png" width="45%">
+                  	<figcaption>Figure 9</figcaption>
+                  </figure>
+                  
+                  <p> Synchronous oscillations typically occur for a specific ratio of mean E- to I-cell firing rate [2]. When both firing rates move in opposite directions, the ratio between mean E and I cell firing rate varies quickly and the gamma oscillation is disrupted [2]. This phenomenon occurs, with the introduction of positive drive to I-cells, as it causes the firing rate of I-cells to increase, resulting in more inhibitory input to E-cells and a decrease in the firing rate of E-cells [2]. Interestingly, random fluctuating light pulse activation of I-cells was found to enhance gamma frequencies relative to other frequency bands, which logically lines up with the possibility of dopamine mechanistically contributing to the emergence of gamma oscillations, by increasing spontaneous inhibitory network activity [2][1].</p>
+                  <!-- Figure 10, 11, 12 -->
+                  <figure>
+                  	<img src="images/gamma-analysis/figure10.png" width="45%">
+                  	<figcaption>Figure 10</figcaption>
+                  	<img class="img-fluid d-block mx-auto" src="images/gamma-analysis/figure11.png" width="45%">
+                  	<figcaption>Figure 11</figcaption>
+                  	<img class="img-fluid d-block mx-auto" src="images/gamma-analysis/figure12.png" width="45%">
+                  	<figcaption>Figure 12</figcaption>
+                  	
+                  </figure>
+                  
+                  <p><b>2. </b>In the follow up PING analysis, drive to the I-cells was made negative to simulate being harder to activate. Because D1Rs were not modeled in this network, their effect was modeled approximately, by lowering the spiking threshold as if dopamine had depolarized the cell by 4 mV and by varying the synaptic input from E-cells to I-cells to roughly simulate the effect of increasing R_in, as has been found experimentally [10]. Raising this synaptic input incrementally resulted in a large increase in clarity of PING (Figure 13). Too much synaptic input, as expected, faded PING (Figure 15). Supporting this finding, one study suggested that there are intrinsic neural mechanisms, through which neuromodulation can change the spike phase in response to oscillatory input [2]. This same study also concluded that depolarization of I-cells increased gamma power in the LFP, whilst hyperpolarizing the I-cells reduced gamma power in the LFP [2]. In a realistically heterogeneous network, a PING needs to be established rapidly, as is demonstrated in these findings [4].</p>
+                  <!-- Figure 13, 14, 15 -->
+                  <figure>
+                  	<img src="images/gamma-analysis/figure13.png" width="45%">
+                  	<figcaption>Figure 13</figcaption>
+                  	<img class="img-fluid d-block mx-auto" src="images/gamma-analysis/figure14.png" width="45%">
+                  	<figcaption>Figure 14</figcaption>
+                  	<img class="img-fluid d-block mx-auto" src="images/gamma-analysis/figure15.png" width="45%">
+                  	<figcaption>Figure 15</figcaption>
+                  	
+                  </figure>
+                  
+                  <p><i>ING</i></p>
+                  <!--insert Figure 16 -->
+                  <figure><img class="img-fluid d-block mx-auto" src="images/gamma-analysis/figure16.png" width="45%"><figcaption>Figure 16</figcaption></figure>
+                  <p><b>1.</b> The most robust ING requires gap junctions, which are present in the pavlovian pathway of the amygdala [5]. In typical brain states, I-cells demonstrate a firing rate far below the common gamma frequency of 40 Hz [2]. Because glutamate has been shown to increase the firing rate of I-cells and the drive to interneurons, the effect of the latter on the former was evaluated in an ING network [7][2]. The results showed a significantly decreased firing rate in response to decreased inhibitory drive via I_i_(bar) (Figure 17)(Figure 16). When increasing I_i_(bar) the opposite was true (Figure 18). [2] confirms the validity of these results, expanding to say that raising drive to E-cells should have a very minimal impact, as compared to activating I-cells in the local circuit.</p>
+                  <!--Insert Figure 17, Figure 18, Figure 19 -->
+                  <figure>
+                  	<img src="images/gamma-analysis/figure17.png" width="45%">
+                  	<figcaption>Figure 17</figcaption>
+                  	<img class="img-fluid d-block mx-auto" src="images/gamma-analysis/figure18.png" width="45%">
+                  	<figcaption>Figure 18</figcaption>
+                  	<img class="img-fluid d-block mx-auto" src="images/gamma-analysis/figure19.png" width="45%">
+                  	<figcaption>Figure 19</figcaption>
+                  	
+                  </figure>
+                  
+                  <p><b>2. </b>In the follow up ING analysis, spiking threshold was varied to primarily test the implication for the binding of dopamine, which has been found to lower spiking thresholds, as well as an approximate test of the slight depolarization or hyperpolarization of I-cells on ING [1][14]. Raising the spiking threshold resulted in an increase in firing rate, whilst lowering the spiking threshold decreased it (Figures 20 and 21). This may occur, as a higher spiking threshold reduces inhibition of I-cells. Nevertheless, this finding stands contrary to the proposal that dopamine modulates gamma oscillations in the pavlovian pathway. Dopamine modulation via decreasing spiking thresholds, causing increased spontaneous inhibitory network activity, lays at the foundation of this proposition [1]. </p>
+                  <!--Figure 20, 21 -->
+                  <figure>
+                  	<img src="images/gamma-analysis/figure20.png" width="45%">
+                  	<figcaption>Figure 20</figcaption>
+                  	<img class="img-fluid d-block mx-auto" src="images/gamma-analysis/figure21.png" width="45%">
+                  	<figcaption>Figure 21</figcaption>
+                  	
+                  </figure>
+
+                  <p><b>Conclusion:	</b>In conclusion, only one test failed to support the prospect of dopamine playing a mechanistic role in gamma oscillations. As this result came from an ING test, this paper concludes that PING may be the more likely mechanism of gamma rhythms regulating the pavlovian pathway. However, enough experimentation supports ING that it cannot be ruled out. This conclusion is in agreement with that of [2], as mentioned previously. The numerical analysis that led to this conclusion is presented below.</p>
+                  <p><a href="https://docs.google.com/document/d/1udiah6AhWuNNt4T1LaqwtAaKg3dbjEKLUIfY2xZLSJ4/edit?usp=sharing">Click Here</a> for a <i>full</i> Numerical Analysis report of domaminergic modulation of Ɣ oscillations.</p>
+
+
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
                     Close Project</button>
