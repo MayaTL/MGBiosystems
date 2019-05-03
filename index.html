@@ -74,14 +74,20 @@
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Join us on the frontier of Neuroscience</h2>
             <h3 class="section-subheading text-muted">Welcome To M & G Biosystems!</h3>
-            <h4>Aims</h4>
+            <h4>Specific Aims</h4>
             <ol>
-              <li>To use slice cultures to analyze the correlation between oscillatory frequency and learning in the fear conditioning pathway</li>
-              <li>To construct an in silico model of the pavlovian fear conditioning pathway in the amygdala</li>
-              <li>To characterize the learned association between neutral and negative inputs, based on generation of outputs</li>
-              <li>To elucidate aspects of the molecular mechanisms underlying emotionally aroused memory storage, by varying the matrices of parameters of the in silico model to match the expected  response for both pre- and post-conditionin</li>
+              <li>To investigate the process of encoding learned information, by constructing an <i>in silico</i> model of the Pavlovian pathway in the Amygdala</li>
+              <li>To analyze neruomodulatory implications on the formation of gamma oscillations in the amygdala </li>
+              <li>To perform slice culture analysis as biological validation of the mechanism underlying gamma oscillations</li>
+              <li>To examine the role of gamma oscillations in fear conditioning</li>
+              <li>To elucidate aspects of the molecular mechanisms underlying emotionally aroused memory storage, by re-evaluating the virtual state of a mouse brain under different experimental conditions</li>
             </ol>
             <p></p>
+            <h4> Introduction </h4>
+            <p>The amygdala plays an essential role in emotion, motivation, and memory, especially those associated with anxiety and negativity. A prevalent pathway in the amygdala, the fear conditioning pathway, encodes fear memories associated with contextual stimuli. Fear conditioning, a specific type of pavlovian conditioning, is a type of conditioned learning which takes advantage of a subject’s instinctive response to have a given stimulus become increasingly effective in evoking said response. This is done by reinforcement, such that two stimuli are presented in close temporal proximity with an appropriate intensity, and is characterized as a learned response. As amygdala dysfunction has been implicated in a range of psychiatric disorders, including anxiety disorders, addiction, and autism, being able to precisely alter and analyze the underlying neural mechanisms using an in silico model could advance clinical therapies. Previous studies suggest that changes in the frequency of oscillation couplings between gamma oscillations and specific portions of the theta cycle correlate with the states of fear and safety. Specifically, theta-gamma coupling overlap was increased during states of fear, while the coupling was suppressed during perceived safety. There are two primary theories for the underlying mechanism of gamma oscillations: pyramidal-interneuronal network gamma (PING) rhythms and interneuronal network gamma (ING) rhythms. Whilst many neuroscientists model gamma oscillations and many model neural circuitry, existing neural network models do not incorporate both. This study of fear conditioning in the amygdala was designed to unify the implication of gamma oscillations and network circuitry in learning.</p>
+            <h4>So ...</h4>
+            <p>In this study, the Pavlovian pathway in the amygdala was computaionally modeled in Matlab to investigate learning to associate two stimjuli.</p>
+            <p>Because of the correlation between gamma oscillations and encoding fear states, the underlying mechanism of gamma oscillations in the amygdala was investigated in slice culture, as well as a simplified network of excitatory (E cells) and inhibitory (I cells) neurons.</p>
             <h4>Table of Contents</h4>
             <p></p>
           </div>
@@ -197,7 +203,7 @@
             </a>
             <div class="portfolio-caption">
               <h4>Matching <i>In Vitro</i> and <i>In Silico</i></h4>
-              <p class="text-muted">Parameter Choices</p>
+              <p class="text-muted">Next Steps</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -238,8 +244,8 @@
               <img class="img-fluid" src="images/bla-2-icon.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Constructing the BLA</h4>
-              <p class="text-muted">The Basolateral Amygdala</p>
+              <h4>Characterizing learning</h4>
+              <p class="text-muted">Degree of Freezing</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -461,7 +467,8 @@
                   <img class="img-fluid d-block mx-auto" src="images/amygdala_diagram.jpg" alt="">
                   <p>The general connectivity of the system is shown in the Figure above and will be modeled as follows. Although, the quantified connectivity is subject to change based on experimental data. </p>
                   <p>As the lateral amygdala doesn’t receive feedback from the basal amygdala nor the prelimbic cortex, it will be the “input” of the in silico model. Biologically the lateral amygdala is known to project to the basal amygdala, this will be mimicked in the model, accordingly. The basal amygdala projects to the prelimbic cortex. Pre-existing literature asserts that there is a dense bidirectional connectivity between the basal amygdala and the medial prefrontal cortex. As such, prelimbic cortex neurons will project to the basal amygdala as well. The basal amygdala also projects to the central amygdala. The central amygdala will be modeled as the “output” of the system. It is a known and key output region of the primate amygdala [1]. This output of the central amygdala is the behavioral response evoked by the stimulus. As mentioned above, the primary behavioral response being evaluated by this study is freezing, with the hope that the in silico model may be expanded to account for the fleeing behavioral response, as well. </p>
-                
+                  <img class="img-fluid d-block mx-auto" src="images/circuit.png" alt="">
+                  <p>Fig. Network Architecture of In Silico Model</p>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
                     Close Project</button>
@@ -488,26 +495,11 @@
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
                   <h2 class="text-uppercase">Single Cell Models</h2>
-                  <p class="item-intro text-muted">Modeling E and I Cells</p>
+                  <p class="item-intro text-muted">For Analyzing Neuromodulation of Gamma Oscillations</p>
                   <img class="img-fluid d-block mx-auto" src="images/Single Cell Models.gif" alt="">
-                  <H4>Basolateral Amygdala (Later + Basal Amygdala)</H4>
-                  <ul>
-                    <li>Type A: Hodgkin-Huxley type cells, with full spike frequency adaptation</li>
-                    <li>Type B: Hodgkin-Huxley type cells, with medium spike frequency adaptation</li>
-                    <li>Inhibitory neurons: GABAergic, fast spiking aspiny cells</li>
-                    <li>Interneuron: Parvalbumin expressing neurons</li>
-                  </ul>
-                  <h4>Prelimbic Cortex</h4>
-                  <ul>
-                    <li>Intrinsically bursting cells, with spike frequency adaptation</li>
-                    <li>Interneurons: GABAergic, fast spiking aspiny cells</li>
-                  </ul>
-                  <h4>The Central Amygdala</h4>
-                  <ul>
-                    <li>Central medial amygdala cells: regular spiking, Hodgkin-Huxley type neurons</li>
-                    <li>Central lateral amygdala cells: regular spiking Hodgkin-Huxley type neurons</li>
-                    <li>Inhibitory neurons: GABAergic</li>
-                  </ul>
+                  <H4>The Wang Buszaki Model</H4>
+                  <p></p>
+                  
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
                     Close Project</button>
@@ -534,6 +526,8 @@
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
                   <h2 class="text-uppercase">Modeling Neuromodulators</h2>
+                  
+                  <h4>Biological Basis</h4>
                   <p class="item-intro text-muted">Dopamine And Norepinephrine</p>
                   <img class="img-fluid d-block mx-auto" src="images/neuromodulators.jpg" alt="">
                   <p>Based on previous research, it is known that neuromodulators alter the excitability of prelimbic and basal amygdala cells, during fear conditioning and extinction. How neuromodulators interact with the neural structures in the system will be modeled as follows.</p>
@@ -547,7 +541,13 @@
                   <!--Insert Network Architecture Picture here-->
                   <p>The effect of dopamine on inhibitory activity in the pavlovian pathway, combined with the conclusions that neuromodulator release in the pathway results from freezing and theta-gamma coupled oscillations also result from freezing, provokes the question of dopamine’s role in the formation of gamma oscillations. Because the mechanism underlying gamma oscillations is inconclusive, Here, we will consider both known mechanisms in the context of dopamine. </p>
                   <p>To read about dopaminergic modulation of gamma oscillations read <a href="#portfolioModal6">Network Synchrony</a>.</p>
-
+                  <h4>Modeling <i>In Silico</i></h4>
+                  <p class="item-intro text-muted">Reinforcement "R" Neuron</p>
+                  <p>...</p>
+                  <p class="item-intro text-muted">X-out "X" Neuron</p>
+                  <p>...</p>
+                  <p class="item-intro text-muted">Omega Neuron</p>
+                  <p>...</p>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
                     Close Project</button>
@@ -754,10 +754,10 @@
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
                   <h2 class="text-uppercase">Matching <i>In Vitro</i> and <i>In Silico</i></h2>
-                  <p class="item-intro text-muted">Parameter Choices</p>
+                  <p class="item-intro text-muted">Next Steps</p>
                   <img class="img-fluid d-block mx-auto" src="agency/img/portfolio/06-full.jpg" alt="">
                   
-                  <p></p>
+                  <p>Implementing gamma oscillations in the in silico model of the pavlovian pathway in the amygdala is the next step. The correlated sustained activity in the basal amygdala and formation of gamma oscillations is associated with long term potentiation (LTP), but not with its failure. Both LTP and gamma oscillations are based on the strengthening of synapses, such that cells that fire together are more likely to do so in the future, thus  neural rhythms will be implemented similarly to LTP.</p>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
                     Close Project</button>
@@ -843,7 +843,7 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Constructing the BLA</h2>
+                  <h2 class="text-uppercase">Characterizing learning and Freezing Scores</h2>
                   <p class="item-intro text-muted">Basolateral Amygdala</p>
                   <img class="img-fluid d-block mx-auto" src="agency/img/portfolio/06-full.jpg" alt="">
                   
@@ -873,17 +873,32 @@
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
                   <h2 class="text-uppercase">Engineering Design Elements</h2>
-                  <p class="item-intro text-muted">A Summary</p>
-                  <img class="img-fluid d-block mx-auto" src="agency/img/portfolio/06-full.jpg" alt="">
+                  <p class="item-intro text-muted">Flow Chart</p>
+                  <img class="img-fluid d-block mx-auto" src="images/flowchart.png" alt="">
                   <h4>Need</h4>
-                  <p>This project primarily fulfills a research need. By identifying and characterizing the component cells and how they connect to form a neural circuit, and further analyzing how certain inputs are translated to corresponding outputs, this project progresses our current understanding of brain and behavior. At the most generic level, this work contributes to knowledge necessary for clinical neuroscience studies. However, with the development of a responsive virtual reality, encompassing a biomimetic model, this project has the potential to shorten experimental periods between neural trials since a virtual model can be used instead of the living analogue, with the actual living organism’s output used only as a later stage experimental confirmation of results</p>
+                  <p>This project primarily fulfills a research need. By identifying and characterizing the componenta and how they connect to form a neural circuit, and further analyzing how certain inputs are translated to corresponding outputs, this project progresses our current understanding of brain and behavior. At the most generic level, this work contributes to knowledge necessary for clinical neuroscience studies. However, with the development of a responsive virtual reality, encompassing a biomimetic model, this project has the potential to shorten experimental periods between neural trials since a virtual model can be used instead of the living analogue, with the actual living organism’s output used only as a later stage experimental confirmation of results</p>
+                  
                   <h4>Anything Holding Us Back?</h4>
-                  <p>It’s still a little early for growing pains but fret not, we still have plenty of other constraints potentially holding us back. </p>
-                  <p><u>Attaining input data:</u> Constructing a detailed diagram of the circuit itself followed by the tenuous and precision heavy labor of modelling the In-Silico model to conform to the previous established datasets</p>
+                  
+                  <p><u>Attaining input data:</u> Constructing a detailed diagram of the circuit itself followed by the tenuous and precision heavy labor of modelling the In-Silico model to conform to the previous established datasets. Getting specific weights to use for multipliers. Modeling Neuromodulator effects individually</p>
                   <p><u>Attaining output data:</u> The mathematical model that is to be developed is complex, even in its simplest form owing to the presence of feedback capable of establishing a learned behavior. </p>
-                  <p><u>Ethics:</u> It is generally seen as less objectionable to test on low order in-vitro cellular networks, than on higher order species, such as monkeys. Research will involve rat subjects as a means to procure amygdaloid slice cultures, used to assess validity of the in silico model. Rats are the simplest possible, or least sentient, species of animal appropriate, as they are an organism that has learning capability. The stage of data collection involves the conditioning  of adult rats through footshocks, in order to invoke fear of a pain and trigger the fear conditioning pathway.  Pain is the most  controllable and precise method of triggering the fear response necessary for conditioning. Beyond the necessary pain trigger of a small caliber shock (0.7mA, 0.2s) there will be no undue, lasting pain for the subject. Moreover, the subject will be anesthetized before slice collection, subjects were euthanized after the procedure. It is also important to note that the minimum number of animals consistent with ensuring scientific objectives will be used.</p>
-                  <p><u>Social Impact:</u> Neural implants have the possibility of revolutionizing the nature of what it means to age, to acquire knowledge, and to interact with the world. Attaining expert guidance: Different aspects of this project require expert knowledge from niche fields, conducting frontier research.</p>
+                  <h4>Ethics</h4>
+                  <p> It is generally seen as less objectionable to test on low order in-vitro cellular networks, than on higher order species, such as monkeys. Research will involve rat subjects as a means to procure amygdaloid slice cultures, used to assess validity of the in silico model. Rats are the simplest possible, or least sentient, species of animal appropriate, as they are an organism that has learning capability. The stage of data collection involves the conditioning  of adult rats through footshocks, in order to invoke fear of a pain and trigger the fear conditioning pathway.  Pain is the most  controllable and precise method of triggering the fear response necessary for conditioning. Beyond the necessary pain trigger of a small caliber shock (0.7mA, 0.2s) there will be no undue, lasting pain for the subject. Moreover, the subject will be anesthetized before slice collection, subjects were euthanized after the procedure. It is also important to note that the minimum number of animals consistent with ensuring scientific objectives will be used.</p>
+                  <h4>Social Impact</h4>
+                  <p> Neural implants have the possibility of revolutionizing the nature of what it means to age, to acquire knowledge, and to interact with the world. Attaining expert guidance: Different aspects of this project require expert knowledge from niche fields, conducting frontier research.</p>
                   <p><u>Competition: what else is going on in the field that would compete with the project plans?</u> In short terms, not really. In long terms: the exploration of learned fear that includes not only analysis of neural architecture and neuromodulators but also of neural synchrony via oscillatory effects is uncommon. This is in part because of the deft of information known about the mechanism behind neural oscillations, leading to their exclusion in many in silico models. Moreover, the niche knowledge and expertise needed for both carrying out biologically validating experiments and programming a computational model means that only a blending of Biomedical Engineering principles and Computational Neuroscience would allow for a decisive exploration of the subject matter.</p>
+                  <h4>Advantages</h4>
+                  <p><ul>
+                  	<li>Precise control of synaptic connectivity</li>
+                  	<li>Provides expected output of different experiment conditions to compare to biologically found results</li>
+                  	<li>Ability to test hypotheses before experimentation</li>
+                  </ul></p>
+                  <h4>Limitations</h4>
+                  <p><ul>
+                  	<li>Limited processing power to model actual population of neural network</li>
+                  	<li>Simplified circuit for ease of calculations</li>
+                  </ul></p>
+                  
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
                     Close Project</button>
@@ -1036,7 +1051,7 @@
                   <!-- Project Details Go Here -->
                   <h2 class="text-uppercase">References</h2>
                   <p class="item-intro text-muted">Avoiding Lawsuits</p>
-                  <img class="img-fluid d-block mx-auto" src="agency/img/portfolio/06-full.jpg" alt="">
+                  <img class="img-fluid d-block mx-auto" src="images/reference.jpg" alt="">
                   <ol>
                     <li>Pendyam, S., Bravo-Rivera, C., Burgos-Robles, A., Sotres-Bayon, F., Quirk, G. J., & Nair, S. S. (2013). Fear signaling in the prelimbic-amygdala circuit: a computational modeling and recording study. Journal of neurophysiology, 110(4), 844-61.</li>
                     <li>Salzman, C. D. (2016, June 06). Amygdala. Retrieved from https://www.britannica.com/science/amygdala</li>
@@ -1045,6 +1060,8 @@
                     <li>Cardin, J., Carlén, M., Meletis, K., Knoblich, U., Zhang, F., & Deisseroth, K. et al. (2010). Targeted optogenetic stimulation and recording of neurons in vivo using cell-type-specific expression of Channelrhodopsin-2. Nature Protocols, 5(2), 247-254.doi:10.1038/nprot.2009.228 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3655719/ </li>
                     <li>Karalis, N., Dejean, C., Chaudun, F., Khoder, S., Rozeske, R., & Wurtz, H. et al. (2016). 4-Hz oscillations synchronize prefrontal–amygdala circuits during fear behavior. Nature Neuroscience, 19(4), 605-612. doi:10.1038/nn.4251 https://www.nature.com/articles/nn.4251 </li>
                     <li>A, B. (2018). Neuronal oscillations in cortical networks. - PubMed - NCBI . Ncbi.nlm.nih.gov. Retrieved 27 November 2018, from https://www.ncbi.nlm.nih.gov/pubmed/15218136</li>
+                    <li>Sierra-Mercado D, Padilla-Coreano N, Quirk GJ. Dissociable roles of prelimbic and infralimbic cortices, ventral hippocampus, and basolateral amygdala in the expression and extinction of conditioned fear. Neuropsychopharmacology 36: 529 –538, 2011.</li>
+                    <li>Ciocchi S, Herry C, Grenier F, Wolff SB, Letzkus JJ, Vlachos I, Ehrlich I, Sprengel R, Deisseroth K, Stadler MB, Muller C, Luthi A. Encoding of conditioned fear in central amygdala inhibitory circuits. Nature 468: 277–282, 2010.</li>
                   </ol>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
